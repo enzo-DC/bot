@@ -1,0 +1,29 @@
+# Telegram Bot
+python-telegram-bot==20.8
+
+# Google Gemini
+google-generativeai>=0.3.0
+
+# HTTP Clients
+httpx>=0.25.0
+requests>=2.31.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Data Validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Utilities
+python-magic-bin>=0.4.14  # Version Windows avec binaires inclus
+pillow>=10.0.0  # Version avec wheels pré-compilés
+aiofiles>=23.2.0
+
+# Logging
+colorlog>=6.8.0
+
+# Testing (optionnel)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.12.0
