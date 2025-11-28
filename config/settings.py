@@ -5,14 +5,14 @@ from pydantic_settings import BaseSettings
 from pydantic import Field
 
 
-load_dotenv()
+load_dotenv()       
 
 class Settings(BaseSettings):
-    telegram_bot_token: str = Field(..., validation_alias="TELEGRAM_BOT_TOKEN")
+    telegram_bot_token: str = Field(..., validation_alias="TELEGRAM_BOT_TOKEN") 
     gemini_api_key: str = Field(..., validation_alias="GEMINI_API_KEY")
-    gemini_model: str = Field(default="gemini-1.5-pro-latest", validation_alias="GEMINI_MODEL")
-    vera_api_key: str = Field(..., validation_alias="VERA_API_KEY")
+    gemini_model: str = Field(default="gemini-2.5-flash", validation_alias="GEMINI_MODEL")    
     vera_api_url: str = Field(..., validation_alias="VERA_API_URL")
+    vera_api_key: str = Field(..., validation_alias="VERA_API_KEY")
     
     log_level: str = Field(default="INFO", validation_alias="LOG_LEVEL")
     max_file_size_mb: int = Field(default=20, validation_alias="MAX_FILE_SIZE_MB")
